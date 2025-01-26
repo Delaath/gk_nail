@@ -105,8 +105,8 @@
         flex-direction: column;
 
         &-div {
-            margin-top: 150px;
-            height: 300px;
+            margin-top: 80px;
+            height: 450px;
         }
 
         &-item {
@@ -118,9 +118,42 @@
         }
 
         &-img {
-            width: 370px;
-        height: 640px;
-            left: 120px;
+            width: 450px;
+        height: 700px;
+            left: 0;
+        }
+
+        .hero-img {
+            width: 450px;
+        height: 700px;
+            top: -80px;
+        }
+
+        .hero-title {
+            width: 350px;
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 70px;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-subtitle {
+            width: 350px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0.35px;
+        }
+
+        .hero-btn-open {
+            color: #FFF;
+            font-size: 8px;
+            font-weight: 400;
+            line-height: 10px;
+            letter-spacing: 0.700px;
+            padding: 15px 25px;
+            background-color: black;
+            margin-top: 20px;
         }
     }
     @media (max-width: 480px) {
