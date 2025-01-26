@@ -508,7 +508,7 @@ body {
     padding-bottom: 41.25%;
   }
 }
-@media (max-width: 480pxadd) {
+@media (max-width: 480px) {
   .video-container {
     max-width: 350px;
   }
