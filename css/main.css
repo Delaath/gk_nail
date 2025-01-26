@@ -934,6 +934,7 @@ body {
     flex-wrap: wrap;
     flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
   }
   .inside-list {
     margin-left: 0;
@@ -982,6 +983,13 @@ body {
   .inside img {
     width: 340px;
     height: 500px;
+  }
+  .inside-div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
   }
 }
 
