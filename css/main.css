@@ -624,6 +624,7 @@ body {
     flex-wrap: wrap;
     align-content: flex-start;
     flex-direction: column-reverse;
+    z-index: -1;
   }
   .photo-div {
     margin-top: 160px;
@@ -637,10 +638,12 @@ body {
   .photo-title {
     margin-bottom: 40px;
     margin-left: 0;
+    z-index: -1;
   }
   .photo-subtitle {
     margin-left: 0;
     margin-bottom: 30px;
+    z-index: -1;
   }
   .photo-link {
     margin-left: 0;
@@ -659,17 +662,20 @@ body {
     flex-wrap: wrap;
     align-content: center;
     flex-direction: column-reverse;
+    z-index: -1;
   }
   .photo-div {
     margin-top: 150px;
     position: relative;
     left: 0;
+    z-index: -1;
   }
   .photo img {
     position: relative;
     left: 0;
     width: 300px;
     height: 350px;
+    z-index: -1;
   }
   .photo-subtitle {
     margin-left: 0;
@@ -678,6 +684,7 @@ body {
     line-height: 20px;
     letter-spacing: 0.35px;
     margin-bottom: 30px;
+    z-index: -1;
   }
   .photo-title {
     margin-bottom: 30px;
@@ -685,6 +692,7 @@ body {
     font-size: 32px;
     line-height: 30px;
     letter-spacing: 0.5px;
+    z-index: -1;
   }
   .photo-desc {
     margin-left: 0;
