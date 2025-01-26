@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+
+    &-item{
+        font-size: 20px;
+        font-weight: 700;
+        color: black;
+        transition: 0.2s ease;
+
+        &:hover{
+            color: rgba(0, 0, 0, 0.600);
+        }
+    }
+
+    @media (max-width: 1024px) {
+        gap: 25px;
+        padding: 10px;
+
+        &-item{
+            font-size: 17px;
+            font-weight: 700;
+        }
+    }
+}

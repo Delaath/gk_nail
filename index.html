@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <header class="container">
+        <ul class="nav">
+            <li class="nav-item"><a href="#">ABOUT</a></li>
+            <li class="nav-item"><a href="#">SHOP</a></li>
+            <li class="nav-item"><a href="#">CONTACT</a></li>
+        </ul>
+    </header>
+    <main class="container">
+        <section class="hero">
+            <div class="hero-div">
+                <h3 class="hero-title">Lorem ipsum dolor sit amet.</h3>
+                <ul class="hero-list">
+                    <li class="hero-item">
+                        <p class="hero-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+                            nulla porro praesentium est deserunt nam perspiciatis sunt iusto ipsa error.</p>
+                    </li>
+                    <button class="hero-btn-open" data-open-modal>SHOP NOW</button>
+                    <div class="backdrop is-hidden" data-modal>
+                        <div class="modal">
+                            <div class="close-div">
+                                <button class="btn" data-close-modal>
+                                    <svg class="close-svg" aria-hidden="true">
+                                        <use href="/img/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
+                            <form class="modal-form" action="YOUR_SERVER_ENDPOINT" method="POST">
+                                <label class="modal-lable-text">
+                                    Ім'я
+                                    <input type="text" name="text" class="input" required minlength="2" maxlength="20"
+                                        pattern="[A-Za-zА-Яа-яЁё\s]+" title="Тільки літери і пробіли" autofocus>
+                                    <svg class="input-svg" aria-hidden="true">
+                                        <use href="./img/symbol-defs.svg#icon-person-black-18dp-1"></use>
+                                    </svg>
+                                </label>
+
+                                <label class="modal-lable-namber">
+                                    Телефон
+                                    <input type="tel" name="number" class="input" required minlength="7" maxlength="15" 
+                                        pattern="^\+?[0-9\s\(\)\-]{7,15}$" title="Номер телефону може містити від 7 до 15 цифр, пробіли, тире, дужки і може починатися з +">
+                                    <svg class="input-svg-tel" aria-hidden="true">
+                                        <use href="./img/symbol-defs.svg#icon-phone-black-18dp-1"></use>
+                                    </svg>
+                                </label>
+
+                                <label class="modal-lable-mail">
+                                    Пошта
+                                    <input type="email" name="email" class="input" required>
+                                    <svg class="input-svg-email" aria-hidden="true">
+                                        <use href="./img/symbol-defs.svg#icon-email-black-18dp-1"></use>
+                                    </svg>
+                                </label>
+
+                                <label class="modal-lable-area">
+                                    Коментар
+                                    <textarea name="feedback" maxlength="300" rows="5"
+                                        placeholder="Введіть текст"></textarea>
+                                </label>
+
+                                <label class="modal-lable-checkbox">
+                                    <input type="checkbox" name="accept" value="accept" class="input-checkbox"
+                                        required />
+                                    Погоджуюся з розсилкою та приймаю<span> <a href="#" class="link-checkbox">Умови договору</a></span>
+                                </label>
+
+                                <button type="submit" class="btn-form">Відправити</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </ul>
+            </div>
+            <div class="hero-div">
+                <img src="img/hero-img.jpg" alt="bg" class="hero-img">
+            </div>
+        </section>
+        <section class="photo">
+            <div class="photo-div">
+                <img src="img/bg_2.jpg" alt="nail" class="photo-img">
+            </div>
+            <div class="photo-div">
+                <p class="photo-desc">Lorem, ipsum dolor.</p>
+                <h3 class="photo-title">Lorem</h3>
+                <p class="photo-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quae aliquid ipsam consequatur ipsa placeat praesentium dignissimos rerum, esse alias, quasi est dolore qui aliquam magni, ratione voluptatum repudiandae? Asperiores officiis quaerat et possimus veniam ea sunt in, impedit vel?</p>
+                <a href="#" class="photo-link">LEARN MORE</a>
+            </div>
+        </section>
+        <section class="video">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/ngAETDhpJgw?si=gaXAV1Zv5GddWlQc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="compain">
+            <ul class="compain-list">
+                <li class="compain-item"><h3 class="compain-title">Lorem ipsum, dolor sit amet consectetur adipisicing.</h3></li>
+                <li class="compain-item"><p class="compain-subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing.</p></li>
+            </ul>
+            <ul class="compain-info-list">
+                <li class="compain-info-item">
+                    <h3 class="compain-info-title">08+</h3>
+                    <p class="compain-info-subtitle">Lorem, ipsum dolor.</p>
+                </li>
+                <li class="compain-info-item">
+                    <h3 class="compain-info-title">LOR + LOREM</h3>
+                    <p class="compain-info-subtitle">Lorem, ipsum dolor.</p>
+                </li>
+                <li class="compain-info-item">
+                    <h3 class="compain-info-title">300+</h3>
+                    <p class="compain-info-subtitle">Lorem, ipsum dolor.</p>
+                </li>
+            </ul>
+            <button class="compain-btn">Lorem ipsum dolor</button>
+        </section>
+
+        <section class="inside">
+            <div class="inside-div">
+                <p class="inside-desc">what inside?</p>
+                <h3 class="inside-title">Lorem ipsum dolor sit amet.</h3>
+                <ul class="inside-list">
+                    <li class="inside-item">
+                        <h3 class="inside-list-title">Lorem, ipsum.</h3>
+                        <p class="inside-list-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis doloribus doloremque et esse. Nisi a vitae minima quidem ab rem tempora temporibus corporis pariatur.</p>
+                    </li>
+                    <li class="inside-item">
+                        <h3 class="inside-list-title">Lorem, ipsum.</h3>
+                        <p class="inside-list-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis doloribus doloremque et esse. Nisi a vitae minima quidem ab rem tempora temporibus corporis pariatur.</p>
+                    </li>
+                    <li class="inside-item">
+                        <h3 class="inside-list-title">Lorem, ipsum.</h3>
+                        <p class="inside-list-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis doloribus doloremque et esse. Nisi a vitae minima quidem ab rem tempora temporibus corporis pariatur.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="inside-div">
+                <img src="img/compain.jpg" alt="img">
+            </div>
+        </section>
+        <section class="galary">
+            <h3 class="galary-title">@GK polish & #GkNailsPolish</h3>
+            <ul class="galary-list">
+                <li class="galary-list-item"><img src="img/galary_4.jpg" alt="galary" class="galary-img"></li>
+                <li class="galary-list-item"><img src="img/galary_3.jpg" alt="galary" class="galary-img"></li>
+                <li class="galary-list-item"><img src="img/galary_5.jpg" alt="galary" class="galary-img"></li>
+                <li class="galary-list-item"><img src="img/galary_2.jpg" alt="galary" class="galary-img"></li>
+                <li class="galary-list-item"><img src="img/galary_1.jpg" alt="galary" class="galary-img"></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <section class="footer_1 container">
+            <h3 class="footer_1-title">Lorem, ipsum dolor sit amet</h3>
+            <ul class="footer_1-list">
+                <li class="footer_1-item-title">SHOP</li>
+                <li class="footer_1-item"><a href="#">About</a></li>
+                <li class="footer_1-item"><a href="#">shop</a></li>
+            </ul>
+            <ul class="footer_1-list">
+                <li class="footer_1-item-title">CONECT</li>
+                <li class="footer_1-item"><a href="#">instagram</a></li>
+                <li class="footer_1-item"><a href="#">twitter</a></li>
+            </ul>
+        </section>
+        <p class="footer_1-desc container">© 2025 GK-Polish</p>
+    </footer>
+
+
+    <script type="module" src="modal.js"></script>
+</body>
+
+</html>

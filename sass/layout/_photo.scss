@@ -1,0 +1,146 @@
+.photo {
+    display: flex;
+    justify-content: space-between;
+
+    &-img {
+        z-index: -1;
+        width: 600px;
+        height: 680px;
+        position: relative;
+        top: -100px;
+    }
+
+    &-desc {
+        margin-left: 100px;
+        margin-bottom: 70px;
+        color: #000;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.99px;
+        text-transform: uppercase;
+    }
+
+    &-title {
+        margin-bottom: 90px;
+        margin-left: 100px;
+        color: #000;
+        font-family: Roboto;
+        font-size: 54px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 64.8px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+    }
+
+    &-subtitle {
+        margin-left: 100px;
+        width: 400px;
+        color: #000;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.36px;
+        margin-bottom: 65px;
+    }
+
+    &-link {
+        margin-left: 100px;
+        padding: 15px 30px;
+        background: #000;
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15.6px;
+        letter-spacing: 0.715px;
+        transition: 0.3s ease;
+
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        &-div {
+            margin-top: 0;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &-img {
+            width: 500px;
+            height: 590px;
+        }
+
+        &-desc {
+            margin-left: 100px;
+            margin-bottom: 65px;
+            font-size: 17px;
+            line-height: 25px;
+            letter-spacing: 0.95px;
+        }
+
+        &-title {
+            margin-bottom: 85px;
+            margin-left: 100px;
+            font-size: 52px;
+            line-height: 64px;
+            letter-spacing: 0.5px;
+        }
+
+        &-subtitle {
+            margin-left: 100px;
+            width: 380px;
+            font-size: 17px;
+            line-height: 25px;
+            letter-spacing: 0.35px;
+            margin-bottom: 60px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        flex-direction: column-reverse;
+
+        &-div {
+            margin-top: 160px;
+            position: relative;
+            left: 103px;
+        }
+
+        &-desc {
+            margin-left: 0;
+            margin-bottom: 30px;
+        }
+
+        &-title {
+            margin-bottom: 40px;
+            margin-left: 0;
+        }
+
+        &-subtitle {
+            margin-left: 0;
+            margin-bottom: 30px;
+        }
+
+        &-link {
+            margin-left: 0;
+        }
+
+        img{
+            position: relative;
+            left: 120px;
+            width: 440px;
+            height: 515px;
+        }
+    }
+}

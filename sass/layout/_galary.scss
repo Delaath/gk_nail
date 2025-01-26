@@ -1,0 +1,67 @@
+.galary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-title {
+        color: #000;
+        text-align: center;
+        font-size: 27px;
+        font-weight: 400;
+        line-height: 35.1px;
+        letter-spacing: 0.6px;
+        margin-bottom: 60px;
+    }
+
+    &-list{
+        display: flex;
+        gap: 3px;
+        flex-wrap: nowrap;
+
+    }
+    &-img{
+        width: 230px;
+        height: 270px;
+    }
+
+    @media (max-width: 1024px) {
+        &-title {
+            font-size: 25px;
+            line-height: 35px;
+            letter-spacing: 0.5px;
+            margin-bottom: 50px;
+        }
+        
+        &-list{
+            display: flex;
+            gap: 3px;
+            
+        }
+        &-img{
+            width: 195px;
+            height: 220px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        &-title {
+            font-size: 22px;
+            line-height: 32px;
+            letter-spacing: 0.4px;
+            margin-bottom: 40px;
+        }
+        
+        &-list{
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+            
+        }
+        &-img{
+            width: 180px;
+            height: 220px
+        }
+    }
+}

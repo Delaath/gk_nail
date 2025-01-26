@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Для планшетов (например, 1024px и меньше) */
+ @media (max-width: 1200px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+/* Для мобильных устройств (например, 768px и меньше) */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 5px;
+    }
+}
+
+/* Для самых маленьких экранов (например, 480px и меньше) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 5px;
+    }
+}

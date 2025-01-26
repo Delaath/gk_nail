@@ -1,0 +1,99 @@
+.inside {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 170px;
+
+    &-desc {
+        color: #000;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22.5px;
+        letter-spacing: 0.825px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    &-title {
+        color: #000;
+        font-size: 54px;
+        font-weight: 400;
+        line-height: 64.8px;
+        letter-spacing: 0.6px;
+        width: 450px;
+        margin-bottom: 90px;
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        margin-left: 100px;
+
+    }
+
+    &-list-title {
+        color: #000;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 31.2px;
+        letter-spacing: 0.6px;
+        margin-bottom: 25px;
+    }
+
+    &-list-subtitle {
+        color: #000;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.36px;
+        width: 375px;
+    }
+
+    @media (max-width: 1024px) {
+        &-desc {
+            font-size: 13px;
+            line-height: 22px;
+            letter-spacing: 0.825px;
+        }
+
+        &-title {
+            font-size: 52px;
+            line-height: 64px;
+            letter-spacing: 0.5px;
+            width: 400px;
+            margin-bottom: 80px;
+        }
+
+        &-list-title {
+            font-size: 22px;
+            line-height: 31px;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+        }
+
+        &-list-subtitle {
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: 0.35px;
+            width: 365px;
+        }
+
+        img {
+            width: 500px;
+            height: 700px;
+        }
+
+    }
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        &-list{
+            margin-left: 0;
+            margin-right: 120px;
+        }
+    }
+}

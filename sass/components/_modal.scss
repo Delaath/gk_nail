@@ -1,0 +1,258 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 80%;
+    padding: 0 20px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+    transform: translate(-50%, -50%);
+    
+    .btn {
+        position: relative;
+        left: 390px;
+        border: none;
+        background-color: #fff;
+        top: 5px;
+    }
+    
+    .close-svg {
+        width: 30px;
+        height: 30px;
+        fill: #000000;
+        border: 1px rgba(0, 0, 0, 0.10) solid;
+        border-radius: 50%;
+        stroke-width: 1px;
+        stroke: rgba(0, 0, 0, 0.10);
+        padding: 6px;
+        transition: fill 0.1s ease;
+    
+    }
+    
+    &-text {
+        width: 416px;
+        color: #212121;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.6px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    &-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    &-lable-text {
+        display: flex;
+        flex-direction: column;
+        color: #757575;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+        transition: 0.3s ease;
+
+        &:focus-within {
+            fill: rgba(33, 150, 243, 1);
+        }
+    }
+    
+    
+    &-lable-namber {
+        display: flex;
+        flex-direction: column;
+        color: #757575;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+        transition: 0.3s ease;
+        
+        &:focus-within {
+            fill: rgba(33, 150, 243, 1);
+        }
+        
+    }
+    
+    &-lable-mail {
+        display: flex;
+        flex-direction: column;
+        color: #757575;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+        transition: 0.3s ease;
+
+        &:focus-within {
+            fill: rgba(33, 150, 243, 1);
+        }
+    }
+    
+    
+    &-lable-area {
+        display: flex;
+        flex-direction: column;
+        color: #757575;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+    }
+    
+    &-lable-checkbox {
+        display: flex;
+        justify-content: center;
+        color: #757575;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 5px;
+        letter-spacing: 0.42px;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    
+    .input {
+        min-width: 300px;
+        height: 40px;
+        border-radius: 4px;
+        border: 1px solid rgba(33, 33, 33, 0.20);
+        margin-top: 4px;
+        padding-left: 35px;
+        color: #000000;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+    
+    
+        &-checkbox {
+            margin-right: 7px;
+        }
+    
+    
+        &-svg-tel {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            top: -30px;
+            left: 10px;
+        
+        }
+    
+        &-svg {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            top: -30px;
+            left: 10px;        
+        }
+    
+        &-svg-email {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            top: -30px;
+            left: 10px;        
+        }
+    
+    }
+    
+    .link-checkbox {
+        color: #000000;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.42px;
+        text-decoration-line: underline;
+    }
+    
+    .btn-form {
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.96px;
+        width: 200px;
+        height: 50px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        background-color: #000000;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        margin-top: 30px;
+        border: none;
+        transition: 0.2s ease;
+
+        &:hover{
+            background-color: #fff;
+            color: black;
+        }
+    }
+    
+    textarea {
+        resize: none;
+        margin-top: 12px;
+        width: 300px;
+        height: 120px;
+        border-radius: 4px;
+        border: 1px solid rgba(33, 33, 33, 0.20);
+        margin-top: 4px;
+        padding: 12px;
+        color: #000000;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+    }
+
+}

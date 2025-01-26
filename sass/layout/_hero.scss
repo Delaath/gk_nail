@@ -1,0 +1,126 @@
+.hero {
+    margin-top: 300px;
+    display: flex;
+    justify-content: space-between;
+
+    &-title {
+        width: 400px;
+        color: #000;
+        font-size: 54px;
+        font-weight: 400;
+        line-height: 64.8px;
+        letter-spacing: 0.6px;
+    }
+
+    &-list {
+        margin-top: 30px;
+    }
+
+    &-item {
+        margin-left: 180px;
+    }
+
+    &-subtitle {
+        width: 355px;
+        color: #000;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25.2px;
+        letter-spacing: 0.36px;
+    }
+
+    &-btn-open {
+        color: #FFF;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15.6px;
+        letter-spacing: 0.715px;
+        padding: 15px 30px;
+        background-color: black;
+        margin-top: 40px;
+        transition: 0.2s ease;
+        margin-left: 180px;
+
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    }
+
+    &-img {
+        position: relative;
+        top: -300px;
+        z-index: -1;
+    }
+
+    @media (max-width: 1200px) {
+        &-img {
+            width: 450px;
+            height: 750px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .hero-img {
+            width: 400px;
+            height: 700px;
+            top: -250px;
+        }
+
+        .hero-title {
+            width: 350px;
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 60px;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-subtitle {
+            width: 345px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0.35px;
+        }
+
+        .hero-btn-open {
+            color: #FFF;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 15px;
+            letter-spacing: 0.700px;
+            padding: 12px 27px;
+            background-color: black;
+            margin-top: 35px;
+        }
+
+    }
+
+    @media (max-width: 768px) {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: column;
+
+        &-div {
+            margin-top: 150px;
+            height: 300px;
+        }
+
+        &-item {
+            margin-left: 0;
+        }
+
+        &-btn-open {
+            margin-left: 0;
+        }
+
+        &-img {
+            width: 370px;
+        height: 640px;
+            left: 120px;
+        }
+    }
+}
