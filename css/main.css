@@ -505,12 +505,12 @@ body {
 @media (max-width: 768px) {
   .video-container {
     max-width: 540px;
-    padding-bottom: 37.25%;
+    padding-bottom: 41.25%;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 480pxadd) {
   .video-container {
-    max-width: 330px;
+    max-width: 350px;
   }
 }
 
@@ -946,7 +946,7 @@ body {
   }
   .inside-list {
     margin-left: 0;
-    margin-right: 120px;
+    margin-right: 0;
   }
 }
 @media (max-width: 480px) {
@@ -986,7 +986,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-left: 60px;
+    margin-left: 0;
   }
   .inside img {
     width: 340px;
