@@ -24,4 +24,14 @@
             font-weight: 700;
         }
     }
+
+    @media (max-width: 480px) {
+        gap: 20px;
+        padding: 10px;
+
+        &-item{
+            font-size: 15px;
+            font-weight: 700;
+        }
+    }
 }

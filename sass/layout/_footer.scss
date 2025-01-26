@@ -76,4 +76,50 @@ footer {
 
         }
     }
+    @media (max-width: 480px) {
+        display: flex;
+        gap: 70px;
+        padding-top: 50px;
+    
+        &-title {
+            width: 250px;
+            color: #F7F5F0;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 40px;
+            letter-spacing: 0.6px;
+        }
+    
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 100px;
+    
+        }
+    
+        &-item-title {
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 15px;
+            letter-spacing: 0.715px;
+            margin-bottom: 10px;
+        }
+    
+        &-item {
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 15px;
+            letter-spacing: 0.715px;
+        }
+    
+        &-desc {
+            color: #FFF;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 15px;
+            letter-spacing: 0.715px;
+            padding-bottom: 50px;
+        }
+    }
 }

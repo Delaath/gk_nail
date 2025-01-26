@@ -11,10 +11,15 @@
         max-width: 840px;
         padding-bottom: 40.25%;
     }
+
     @media (max-width: 768px) {
-    max-width: 540px;
-    padding-bottom: 37.25%;
-}
+        max-width: 540px;
+        padding-bottom: 37.25%;
+    }
+
+    @media (max-width: 480px) {
+        max-width: 330px;
+    }
 
 }
 

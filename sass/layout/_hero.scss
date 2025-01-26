@@ -123,4 +123,64 @@
             left: 120px;
         }
     }
+    @media (max-width: 480px) {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: column;
+
+        &-div {
+            margin-top: 70px;
+            height: 250px;
+        }
+
+        &-item {
+            margin-left: 0;
+        }
+
+        &-btn-open {
+            margin-left: 0;
+        }
+
+        &-img {
+            width: 360px;
+        height: 640px;
+            left: 0;
+        }
+
+        .hero-img {
+            width: 300px;
+            height: 450px;
+            top: -80px;
+        }
+
+        .hero-title {
+            width: 240px;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 40px;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-subtitle {
+            width: 250px;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.35px;
+        }
+
+        .hero-btn-open {
+            color: #FFF;
+            font-size: 8px;
+            font-weight: 400;
+            line-height: 10px;
+            letter-spacing: 0.700px;
+            padding: 10px 20px;
+            background-color: black;
+            margin-top: 20px;
+        }
+    }
 }

@@ -64,4 +64,26 @@
             height: 220px
         }
     }
+
+    @media (max-width: 480px) {
+        &-title {
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.4px;
+            margin-bottom: 20px;
+        }
+        
+        &-list{
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+            
+        }
+        &-img{
+            width: 170px;
+            height: 200px
+        }
+    }
 }
