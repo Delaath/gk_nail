@@ -984,7 +984,7 @@ body {
     width: 340px;
     height: 500px;
   }
-  .inside-div {
+  .inside .inside-div {
     display: flex;
     flex-direction: column;
     align-content: center;
